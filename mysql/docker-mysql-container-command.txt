@@ -1,0 +1,1 @@
+docker run -d --network=host --name myDB -e MYSQL_USER=abhishek -e MYSQL_DATABASE=guest -e MYSQL_ROOT_PASSWORD=abhishek@123 -e MYSQL_PASSWORD=abhishek@123 custom-mysql

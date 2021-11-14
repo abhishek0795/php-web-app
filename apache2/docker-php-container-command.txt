@@ -1,0 +1,1 @@
+docker run -d -p 8080:80  -v /root/Assignment2/apache2:/var/www/html/ --network=host  --name webapp -e MYSQL_USER=abhishek -e MYSQL_DATABASE=guest -e MYSQL_HOST=myDB -e MYSQL_PASSWORD=abhishek@123 custom-php
