@@ -1,8 +1,6 @@
 pipeline {
   agent any
-    
-  tools {nodejs "node"}
-    
+     
   stages {
         
     stage('Git') {
@@ -13,15 +11,15 @@ pipeline {
      
     stage('Build') {
       steps {
-        sh 'npm install'
-         sh '<<Build Command>>'
+        sh '/Applications/Docker.app/Contents/Resources/bin/docker build -t abhishekjha95/php-web-app -f apache2/Dockerfile'
+        sh '/Applications/Docker.app/Contents/Resources/bin/docker build -t abhishekjha95/mysql-web-app -f mysql/Dockerfile'
       }
     }  
     
             
     stage('Test') {
       steps {
-        sh 'node test'
+       // sh 'node test'
       }
     }
   }
