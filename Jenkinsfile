@@ -20,6 +20,7 @@ pipeline {
     stage('Test') {
       steps {
        // sh 'node test'
+       echo 'successfully build'
       }
     }
   }
