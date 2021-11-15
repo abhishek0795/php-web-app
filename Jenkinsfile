@@ -5,8 +5,8 @@ pipeline {
   
     stage('Build') {
       steps {
-        sh '/Applications/Docker.app/Contents/Resources/bin/docker build -t abhishekjha95/php-web-app -f apache2/Dockerfile'
-        sh '/Applications/Docker.app/Contents/Resources/bin/docker build -t abhishekjha95/mysql-web-app -f mysql/Dockerfile'
+        sh '/Applications/Docker.app/Contents/Resources/bin/docker build -t abhishekjha95/php-web-app -f apache2/'
+        sh '/Applications/Docker.app/Contents/Resources/bin/docker build -t abhishekjha95/mysql-web-app -f mysql/'
       }
     }  
     
