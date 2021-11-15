@@ -1,6 +1,6 @@
 <?php
 #$servername = getenv("MYSQL_HOST");
-$servername ="127.0.0.1";
+$servername ="myDB";
 $username = getenv("MYSQL_USER");
 $password = getenv("MYSQL_PASSWORD");
 $dbname = getenv("MYSQL_DATABASE");
