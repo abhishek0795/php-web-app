@@ -4,10 +4,10 @@
 // $username = getenv("MYSQL_USER");
 // $password = getenv("MYSQL_PASSWORD");
 // $dbname = getenv("MYSQL_DATABASE");
-$servername ="abhishek-rds.cq174vfsoqja.us-east-1.rds.amazonaws.com";
-$username = "admin";
-$password = "admin123";
-$dbname = "testdb";
+$servername ="abhishek-rds-instance.cdxhhswkgl8b.us-east-2.rds.amazonaws.com";
+$username = "abhishek";
+$password = "abhishek123";
+$dbname = "test";
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
